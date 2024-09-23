@@ -6,6 +6,7 @@ app = Flask(__name__)
 # Enable CORS for all routes, allowing React frontend to call this API
 CORS(app)
 
+# these are url paths to give jsonify object
 @app.route('/home', methods=['GET'])
 def home():
     return jsonify({
